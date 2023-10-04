@@ -1,0 +1,285 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>重逢时 | 重逢时</title><meta name="author" content="重逢时"><meta name="copyright" content="重逢时"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="第2章 程序设计语言基础知识一  程序设计语言概述 程序设计语言是为了书写计算机程序而人为设计的符号语言，用于对计算过程进行描述、组织和推导  1. 各语言特点 低级语言：机器语言（计算机硬件只能识别0和1的指令程序），汇编语言 高级语言：功能更强，抽象级别更高，与人们使用的自然语言比较接近">
+<meta property="og:type" content="article">
+<meta property="og:title" content="重逢时">
+<meta property="og:url" content="http://example.com/2023/10/04/Markdown%E7%89%88%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86/%E7%AC%AC2%E7%AB%A0%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/index.html">
+<meta property="og:site_name" content="重逢时">
+<meta property="og:description" content="第2章 程序设计语言基础知识一  程序设计语言概述 程序设计语言是为了书写计算机程序而人为设计的符号语言，用于对计算过程进行描述、组织和推导  1. 各语言特点 低级语言：机器语言（计算机硬件只能识别0和1的指令程序），汇编语言 高级语言：功能更强，抽象级别更高，与人们使用的自然语言比较接近">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/pic.jpg">
+<meta property="article:published_time" content="2023-10-04T03:08:49.719Z">
+<meta property="article:modified_time" content="2023-09-23T03:06:47.031Z">
+<meta property="article:author" content="重逢时">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/pic.jpg"><link rel="shortcut icon" href="/img/logo.png"><link rel="canonical" href="http://example.com/2023/10/04/Markdown%E7%89%88%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86/%E7%AC%AC2%E7%AB%A0%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '重逢时',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-09-23 11:06:47'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/pic.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">14</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> 博文</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 生活</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/photos/"><i class="fa-fw fa fa-camera-retro"></i><span> 相册</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 影视</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/links/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/comment/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于笔者</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/background.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="重逢时"><span class="site-name">重逢时</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> 博文</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 生活</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/photos/"><i class="fa-fw fa fa-camera-retro"></i><span> 相册</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 影视</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/links/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/comment/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于笔者</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">无题</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-10-04T03:08:49.719Z" title="发表于 2023-10-04 11:08:49">2023-10-04</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-09-23T03:06:47.031Z" title="更新于 2023-09-23 11:06:47">2023-09-23</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="第2章-程序设计语言基础知识"><a href="#第2章-程序设计语言基础知识" class="headerlink" title="第2章 程序设计语言基础知识"></a>第2章 程序设计语言基础知识</h1><h2 id="一-程序设计语言概述"><a href="#一-程序设计语言概述" class="headerlink" title="一  程序设计语言概述"></a>一  程序设计语言概述</h2><ul>
+<li>程序设计语言是为了书写计算机程序而人为设计的符号语言，用于对计算过程进行描述、组织和推导</li>
+</ul>
+<h3 id="1-各语言特点"><a href="#1-各语言特点" class="headerlink" title="1. 各语言特点"></a>1. 各语言特点</h3><ul>
+<li>低级语言：机器语言（计算机硬件只能识别0和1的指令程序），汇编语言</li>
+<li>高级语言：功能更强，抽象级别更高，与人们使用的自然语言比较接近</li>
+</ul>
+<table width="568">
+    <tbody>
+        <tr class="firstRow">
+            <td width="568" valign="top" style="padding: 0px 7px; border-width: 1px; border-color: windowtext;">
+                <p>
+                    <span style=";font-family:宋体;font-size:14px">Fortran<span style="font-family:宋体">语言，科学计算，执行效率高</span></span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="568" valign="top" style="padding: 0px 7px; border-left-width: 1px; border-left-color: windowtext; border-right-width: 1px; border-right-color: windowtext; border-top: none; border-bottom-width: 1px; border-bottom-color: windowtext;">
+                <p>
+                    <span style=";font-family:宋体;font-size:14px">Pascal<span style="font-family:宋体">语言，为教学而开发的，表达能力强，</span><span style="font-family:Calibri">delphi</span></span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="568" valign="top" style="padding: 0px 7px; border-left-width: 1px; border-left-color: windowtext; border-right-width: 1px; border-right-color: windowtext; border-top: none; border-bottom-width: 1px; border-bottom-color: windowtext;">
+                <p>
+                    <span style=";font-family:宋体;font-size:14px">C<span style="font-family:宋体">语言，指针操作能力强，高效</span></span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="568" valign="top" style="padding: 0px 7px; border-left-width: 1px; border-left-color: windowtext; border-right-width: 1px; border-right-color: windowtext; border-top: none; border-bottom-width: 1px; border-bottom-color: windowtext;">
+                <p>
+                    <span style=";font-family:宋体;font-size:14px">Lisp<span style="font-family:宋体">语言，函数式程序语言，符号处理，人工智能</span></span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="568" valign="top" style="padding: 0px 7px; border-left-width: 1px; border-left-color: windowtext; border-right-width: 1px; border-right-color: windowtext; border-top: none; border-bottom-width: 1px; border-bottom-color: windowtext;">
+                <p>
+                    <span style=";font-family:宋体;font-size:14px">C++<span style="font-family:宋体">语言，面向对象，高效</span></span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="568" valign="top" style="padding: 0px 7px; border-left-width: 1px; border-left-color: windowtext; border-right-width: 1px; border-right-color: windowtext; border-top: none; border-bottom-width: 1px; border-bottom-color: windowtext;">
+                <p>
+                    <span style=";font-family:宋体;font-size:14px">Java<span style="font-family:宋体">语言，面向对象，中间代码，跨平台</span></span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="568" valign="top" style="padding: 0px 7px; border-left-width: 1px; border-left-color: windowtext; border-right-width: 1px; border-right-color: windowtext; border-top: none; border-bottom-width: 1px; border-bottom-color: windowtext;">
+                <p>
+                    <span style=";font-family:宋体;font-size:14px">C#<span style="font-family:宋体">语言，面向对象，中间代码，</span><span style="font-family:Calibri">.NET</span></span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="568" valign="top" style="padding: 0px 7px; border-left-width: 1px; border-left-color: windowtext; border-right-width: 1px; border-right-color: windowtext; border-top: none; border-bottom-width: 1px; border-bottom-color: windowtext;">
+                <p>
+                    <span style=";font-family:宋体;font-size:14px">Prolog<span style="font-family:宋体">语言，逻辑推理，间接性，表达能力强，数据库和专家系统</span></span>
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<h3 id="2-解释和编译"><a href="#2-解释和编译" class="headerlink" title="2. 解释和编译"></a>2. 解释和编译</h3><ul>
+<li>都是将高级语言翻译成计算机硬件认识的及其语言。</li>
+<li>编译：生成独立的可执行文件，直接运行，运行时无法控制源程序，效率高。</li>
+<li>解释：不生成可执行文件，可以逐条解释执行，用于调试模式，可以控制源程序，因为还需要控制程序，因此执行速度慢，相对于编译效率低。</li>
+</ul>
+<h3 id="3-程序语言组成"><a href="#3-程序语言组成" class="headerlink" title="3. 程序语言组成"></a>3. 程序语言组成</h3><ul>
+<li>语法（一组规则）</li>
+<li>语义（语法成分的含义）</li>
+<li>语用（构成语言的各个记号和使用者的关系）</li>
+</ul>
+<h2 id="二．程序设计语言的基本成分"><a href="#二．程序设计语言的基本成分" class="headerlink" title="二．程序设计语言的基本成分"></a>二．程序设计语言的基本成分</h2><h3 id="1-数据成分"><a href="#1-数据成分" class="headerlink" title="1.  数据成分"></a>1.  数据成分</h3><p>是一种程序设计语言的数据和数据类型，数据分为常量（程序运行时不可改变）、变量（可以改变）、全局量（存储空间在静态数据区分配）、局部量（存储空间在堆栈区分配）</p>
+<h3 id="2-数据类型有："><a href="#2-数据类型有：" class="headerlink" title="2.  数据类型有："></a>2.  数据类型有：</h3><p>整型、字符型、双精度、单精度浮点型、布尔型等</p>
+<h3 id="3-运算成分："><a href="#3-运算成分：" class="headerlink" title="3.  运算成分："></a>3.  运算成分：</h3><p>指明允许使用的运算符号即运算规则，包括算数运算、逻辑运算、关系运算、位运算等。</p>
+<h3 id="4-控制成分："><a href="#4-控制成分：" class="headerlink" title="4.  控制成分："></a>4.  控制成分：</h3><p>指明语言允许标书的控制结构。包括顺序结构、选择结构、循环结构（初始化+循环体+循环条件）<br><img src="/./images/2-2.png" alt="软件设计师教程知识点整理"></p>
+<h3 id="5-传输成分："><a href="#5-传输成分：" class="headerlink" title="5.  传输成分："></a>5.  传输成分：</h3><p>指明语言允许的数据传输方式。如：赋值处理、数据的输入输出等</p>
+<h3 id="6-函数："><a href="#6-函数：" class="headerlink" title="6.  函数："></a>6.  函数：</h3><p>C程序有一个或多个函数组成，每个函数都有一个名字，其中有且仅有一个名字为main函数作为运行时的起点。函数式程序模块的主要成分，是一段具有独立功能的程序。函数使用涉及三个概念：函数定义、函数声明（先声明后使用）、函数调用</p>
+<h3 id="7-调用："><a href="#7-调用：" class="headerlink" title="7 调用："></a>7 调用：</h3><ul>
+<li>传值调用：将实参的值传递给形参，形参的改变不会导致调用点所传的实参的值改变。实参可是是合法的变量、常量、表达式</li>
+<li>传址调用：即引用调用，将实参的地址传值给形参，即相当于实参存储单元的地址引用，因此其值改变的同时就改变了实参的值，实参不能为常-量，只能是合法的变量和表达式。</li>
+<li>因此，在编程时，要改变参数值，就传址，不改变，就传值</li>
+</ul>
+<h2 id="三．编译程序基本原理"><a href="#三．编译程序基本原理" class="headerlink" title="三．编译程序基本原理"></a>三．编译程序基本原理</h2><h3 id="1-功能："><a href="#1-功能：" class="headerlink" title="1.  功能："></a>1.  功能：</h3><p>是把高级语言书写的程序翻译成汇编语言或机器语言<br>分为6个阶段：</p>
+<ul>
+<li>1.词法分析：对源程序字符进行扫描根据构词规则识别单词（也称单词符号或符号）</li>
+<li>2.语法分析：逻辑阶段，根据识别的单词组合成各类语法短语，如：程序，语句，表达式等，分析判断源程序在结构是否正确</li>
+<li>3.语义分析：逻辑阶段，对结构上正确的源程序进行上下文有关性质的审查。如：类型匹配、除法除数不为0等。分为静态语义错误（编译阶段能够发现）、动态语义错误（运行时能发现）</li>
+<li>4.中间代码和目标代码生成：中间代码是语义分析产生的需要经过优化链接，最终生成可执行的目标代码。引入中间代码的目的是进行与机器无关的代码优化处理。常用的中间代码有后缀式（逆波兰式）、三元式（三地址码）、四元式和树等形式。<br><img src="/./images/2-2.png" alt="软件设计师教程知识点整理"></li>
+</ul>
+<h3 id="2-文法定义："><a href="#2-文法定义：" class="headerlink" title="2.  文法定义："></a>2.  文法定义：</h3><ul>
+<li><p>2.1 形式文法四元组G&#x3D;（V,T,S,P）<br>  1.S: 文法开始符号<br>  2.V: 不是语言组成部分，可理解为占位符；非终结符：能够推导出其他元素<br>  3.P：产生式。用终结符替代非终结符的规则；即非终结符推导出终结符的公式<br>  4.T: 终结符，语言组成部分，是最终结果；不能推导出其他元素</p>
+</li>
+<li><p>2.2 闭包：如下图，一般闭包可以为0个的情况代付运算<br><img src="/./images/2-4.png" alt="软件设计师教程知识点整理"></p>
+</li>
+<li><p>2.3 文法类型：<br><img src="/./images/2-5.png" alt="软件设计师教程知识点整理"></p>
+<ul>
+<li>1型 -》 语义分析（上下文有关）</li>
+<li>2型 -》 语法分析（上下文无关）</li>
+</ul>
+</li>
+</ul>
+<h2 id="四．正规式"><a href="#四．正规式" class="headerlink" title="四．正规式"></a>四．正规式</h2><p><img src="/./images/2-6.png" alt="软件设计师教程知识点整理"></p>
+<h2 id="五．有限自动机"><a href="#五．有限自动机" class="headerlink" title="五．有限自动机"></a>五．有限自动机</h2><p><img src="/./images/2-7.png" alt="软件设计师教程知识点整理"></p>
+<h3 id="例：如下图：S-开始，ACB转换，F-两个圈是最终结果"><a href="#例：如下图：S-开始，ACB转换，F-两个圈是最终结果" class="headerlink" title="例：如下图：S 开始，ACB转换，F 两个圈是最终结果"></a>例：如下图：S 开始，ACB转换，F 两个圈是最终结果</h3><p><img src="/./images/2-8.png" alt="软件设计师教程知识点整理"></p>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">S输入1，得到A输入0 得到F</span><br><span class="line">S输入1，得到A输入1 ,得到C输入0,1 得到F</span><br><span class="line">S输入0，得到B输入0 得到F</span><br><span class="line">S输入0，得到B输入1，得到C输入0,1 得到F</span><br><span class="line">每一条线路都是唯一的，得出此图为确定有限自动机</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>确定有限自动机：输入同一个值，得出的后继是唯一的</p>
+</li>
+<li><p>不确定的有限自动机：输入同一个值，得出多个后继,下面例子是不确定的</p>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">例：S输入1，得到B</span><br><span class="line">S输入1，得到A</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="六．语法分析方法"><a href="#六．语法分析方法" class="headerlink" title="六．语法分析方法"></a>六．语法分析方法</h2><h3 id="1-自上而下语法分析："><a href="#1-自上而下语法分析：" class="headerlink" title="1. 自上而下语法分析："></a>1. 自上而下语法分析：</h3><p>最左推导，从左至右。给定文法G和源程序串r,从G的开始符号出S出发，通过反复使用产生式对举行中的非终结符进行替换（推导），逐步推出r<br>递归下降：利用函数之间的递归调用模拟语法树自上而下的构造过程，是一种自上而下的语法分析方法</p>
+<h3 id="2-自下而上语法分析："><a href="#2-自下而上语法分析：" class="headerlink" title="2. 自下而上语法分析："></a>2. 自下而上语法分析：</h3><p>最右推导，从右至左<br>移进-归约思想：设置一个栈，将输入符号逐个移进栈中，栈顶形成某产生式的又不时，就用左部去替换，称为归约。从右部推导出左部，是一种自下而上的语法分析方法</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://example.com">重逢时</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2023/10/04/Markdown%E7%89%88%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86/%E7%AC%AC2%E7%AB%A0%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">http://example.com/2023/10/04/Markdown版知识点整理/第2章程序设计语言基础知识/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">重逢时</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/img/pic.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/10/04/Markdown%E7%89%88%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86/%E7%AC%AC1%E7%AB%A0%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%9F%A5%E8%AF%86/" title="第一章计算机系统知识"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">第一章计算机系统知识</div></div></a></div><div class="next-post pull-right"><a href="/2023/10/04/Markdown%E7%89%88%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86/%E7%AC%AC3%E7%AB%A0%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" title=""><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info"></div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/pic.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">重逢时</div><div class="author-info__description">重逢时写的小破站</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">14</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/chenfasen"><i class="fab fa-github"></i><span>This is my github</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/chenfasen" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://blog.csdn.net/chenfensen2002" target="_blank" title="CSDN"><i class="fas fa-link"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC2%E7%AB%A0-%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="toc-number">1.</span> <span class="toc-text">第2章 程序设计语言基础知识</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80-%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0"><span class="toc-number">1.1.</span> <span class="toc-text">一  程序设计语言概述</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%90%84%E8%AF%AD%E8%A8%80%E7%89%B9%E7%82%B9"><span class="toc-number">1.1.1.</span> <span class="toc-text">1. 各语言特点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E8%A7%A3%E9%87%8A%E5%92%8C%E7%BC%96%E8%AF%91"><span class="toc-number">1.1.2.</span> <span class="toc-text">2. 解释和编译</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E7%A8%8B%E5%BA%8F%E8%AF%AD%E8%A8%80%E7%BB%84%E6%88%90"><span class="toc-number">1.1.3.</span> <span class="toc-text">3. 程序语言组成</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%EF%BC%8E%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%88%90%E5%88%86"><span class="toc-number">1.2.</span> <span class="toc-text">二．程序设计语言的基本成分</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%95%B0%E6%8D%AE%E6%88%90%E5%88%86"><span class="toc-number">1.2.1.</span> <span class="toc-text">1.  数据成分</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E6%9C%89%EF%BC%9A"><span class="toc-number">1.2.2.</span> <span class="toc-text">2.  数据类型有：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E8%BF%90%E7%AE%97%E6%88%90%E5%88%86%EF%BC%9A"><span class="toc-number">1.2.3.</span> <span class="toc-text">3.  运算成分：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E6%8E%A7%E5%88%B6%E6%88%90%E5%88%86%EF%BC%9A"><span class="toc-number">1.2.4.</span> <span class="toc-text">4.  控制成分：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E4%BC%A0%E8%BE%93%E6%88%90%E5%88%86%EF%BC%9A"><span class="toc-number">1.2.5.</span> <span class="toc-text">5.  传输成分：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E5%87%BD%E6%95%B0%EF%BC%9A"><span class="toc-number">1.2.6.</span> <span class="toc-text">6.  函数：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-%E8%B0%83%E7%94%A8%EF%BC%9A"><span class="toc-number">1.2.7.</span> <span class="toc-text">7 调用：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%EF%BC%8E%E7%BC%96%E8%AF%91%E7%A8%8B%E5%BA%8F%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86"><span class="toc-number">1.3.</span> <span class="toc-text">三．编译程序基本原理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%8A%9F%E8%83%BD%EF%BC%9A"><span class="toc-number">1.3.1.</span> <span class="toc-text">1.  功能：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%96%87%E6%B3%95%E5%AE%9A%E4%B9%89%EF%BC%9A"><span class="toc-number">1.3.2.</span> <span class="toc-text">2.  文法定义：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%EF%BC%8E%E6%AD%A3%E8%A7%84%E5%BC%8F"><span class="toc-number">1.4.</span> <span class="toc-text">四．正规式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%EF%BC%8E%E6%9C%89%E9%99%90%E8%87%AA%E5%8A%A8%E6%9C%BA"><span class="toc-number">1.5.</span> <span class="toc-text">五．有限自动机</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BE%8B%EF%BC%9A%E5%A6%82%E4%B8%8B%E5%9B%BE%EF%BC%9AS-%E5%BC%80%E5%A7%8B%EF%BC%8CACB%E8%BD%AC%E6%8D%A2%EF%BC%8CF-%E4%B8%A4%E4%B8%AA%E5%9C%88%E6%98%AF%E6%9C%80%E7%BB%88%E7%BB%93%E6%9E%9C"><span class="toc-number">1.5.1.</span> <span class="toc-text">例：如下图：S 开始，ACB转换，F 两个圈是最终结果</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AD%EF%BC%8E%E8%AF%AD%E6%B3%95%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95"><span class="toc-number">1.6.</span> <span class="toc-text">六．语法分析方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E8%87%AA%E4%B8%8A%E8%80%8C%E4%B8%8B%E8%AF%AD%E6%B3%95%E5%88%86%E6%9E%90%EF%BC%9A"><span class="toc-number">1.6.1.</span> <span class="toc-text">1. 自上而下语法分析：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E8%87%AA%E4%B8%8B%E8%80%8C%E4%B8%8A%E8%AF%AD%E6%B3%95%E5%88%86%E6%9E%90%EF%BC%9A"><span class="toc-number">1.6.2.</span> <span class="toc-text">2. 自下而上语法分析：</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/10/04/Markdown%E7%89%88%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86/%E7%AC%AC8%E7%AB%A0%E7%AE%97%E6%B3%95%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%86%E6%9E%90/" title="无题">无题</a><time datetime="2023-10-04T03:08:49.736Z" title="发表于 2023-10-04 11:08:49">2023-10-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/10/04/Markdown%E7%89%88%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86/%E7%AC%AC9%E7%AB%A0%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80/" title="无题">无题</a><time datetime="2023-10-04T03:08:49.736Z" title="发表于 2023-10-04 11:08:49">2023-10-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/10/04/Markdown%E7%89%88%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86/%E7%AC%AC1%E7%AB%A0%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%9F%A5%E8%AF%86/" title="第一章计算机系统知识">第一章计算机系统知识</a><time datetime="2023-10-04T03:08:49.719Z" title="发表于 2023-10-04 11:08:49">2023-10-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/10/04/Markdown%E7%89%88%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86/%E7%AC%AC2%E7%AB%A0%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" title="无题">无题</a><time datetime="2023-10-04T03:08:49.719Z" title="发表于 2023-10-04 11:08:49">2023-10-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/10/04/Markdown%E7%89%88%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86/%E7%AC%AC3%E7%AB%A0%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" title="无题">无题</a><time datetime="2023-10-04T03:08:49.719Z" title="发表于 2023-10-04 11:08:49">2023-10-04</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/background.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By 重逢时</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div class="no-result" id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>
